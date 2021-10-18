@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 
 
+// Reikia modifikuoti šiuos duomenis į
+// https://stackblitz.com/edit/angular-bcxw8b?file=src%2Fapp%2Fproducts.ts
+
+// Papildomai: Pabandykite perkelti duomenis i atskira faila, products.ts
 const ELEMENT_DATA: Object[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
@@ -21,6 +25,10 @@ const ELEMENT_DATA: Object[] = [
 })
 export class AppComponent {
   title = 'project-a';
+
+  // Data source yra musu duomenu masyvas, kuri perduosime i mat-table komponenta
   dataSource = ELEMENT_DATA;
+
+  // DisplayedColumns - stulpeliai, kuriuos atvaizduosime lenteleje
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 }
