@@ -5,6 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+/* Visi angular material komponentai turetu buti importuojami, kaip pagal pvz:
+https://material.angular.io/guide/getting-started#display-a-component
+*/
+
+/* Visu komponentu sarasas: https://material.angular.io/components/categories */
+import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
