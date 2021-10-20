@@ -6,7 +6,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 
 // Cia aprasysime visus savo aplikacijos puslapius
 const routes: Routes = [
-  { path: '/', component: ProductsTableComponent },
+  // Pradinis puslapis
+  { path: '', component: ProductsTableComponent },
+
+  // Kontaktu puslapis
   { path: 'contacts', component: ContactFormComponent },
 ];
 
