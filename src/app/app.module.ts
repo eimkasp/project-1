@@ -15,11 +15,15 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
+import { ProductsTableComponent } from './products-table/products-table.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductsTableComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
