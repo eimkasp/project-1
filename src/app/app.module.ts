@@ -23,6 +23,7 @@ import { ProductsTableComponent } from './products-table/products-table.componen
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsDetailsComponentComponent } from './products-details-component/products-details-component.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     ProductsTableComponent,
     ContactFormComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsDetailsComponentComponent
   ],
   imports: [
     BrowserModule,
