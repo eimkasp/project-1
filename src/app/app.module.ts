@@ -15,15 +15,21 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
+
 import { ProductsTableComponent } from './products-table/products-table.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsTableComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MatSliderModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatTableModule
+    MatTableModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
