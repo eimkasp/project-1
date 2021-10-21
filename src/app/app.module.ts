@@ -22,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProductsTableComponent } from './products-table/products-table.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     ProductsTableComponent,
     ContactFormComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
